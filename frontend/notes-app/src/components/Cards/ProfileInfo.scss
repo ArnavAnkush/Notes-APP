@@ -1,0 +1,57 @@
+$text-lgt-gray: #313131;
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile-pic {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightseagreen;
+  color: white;
+  font-weight: 500;
+}
+
+p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+button {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ff4d4d;
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
+
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 5px;
+
+  transition: all 0.25s ease;
+}
+
+button:hover {
+  color: #ff1f1f;
+  text-decoration-color: #ff1f1f;
+}
+
+button:active {
+  transform: scale(0.98);
+}
+
+button:focus-visible {
+  outline: 2px solid rgba(255, 77, 77, 0.7);
+  outline-offset: 4px;
+  border-radius: 6px;
+}
