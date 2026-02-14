@@ -1,0 +1,51 @@
+// Colors
+$primary: #0f0f0f;
+$sec: #181818;
+$tri: #252525;
+$blue: #0174dc;
+
+$text-gray: #747474;
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7rem;
+}
+
+.card {
+  width: 24rem;
+  border-radius: 0.25rem;
+  background-color: $tri;
+  padding: 2.75rem 1.75rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin-bottom: 2.75rem;
+  color: white;
+}
+
+.text {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  color: $text-gray;
+}
+
+.link {
+  font-size: 500;
+  text-decoration: underline;
+  color: white;
+}
+
+.error {
+  color: rgb(242, 44, 44);
+  font-size: 0.9rem;
+  padding-bottom: 0.4rem;
+  letter-spacing: 1px;
+  font-weight: 300;
+}

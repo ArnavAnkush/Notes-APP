@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+// Colors
+$primary: #0f0f0f;
+$sec: #181818;
+$tri: #252525;
+$blue: #0174dc;
+
+$text-gray: #0f0f0f;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  background-color: #111;
+  overflow-x: hidden;
+  color: white;
+}
+
+.input-box {
+  width: 100%;
+  font-size: 0.875rem; // text-sm
+  background-color: $sec;
+  border: 1.25px solid $tri;
+  padding: 0.75rem 1.25rem; // py-3 px-5
+  border-radius: 0.25rem; // rounded
+  margin-bottom: 1rem; // mb-4
+  outline: none;
+  color: white;
+}
+
+.btn {
+  width: 100%;
+  font-size: 0.875rem; // text-sm
+  background-color: $blue; // bg-primary (Tailwind blue-500 style)
+  color: white;
+  padding: 0.5rem; // p-2
+  border-radius: 0.25rem; // rounded
+  margin: 0.25rem 0; // my-1
+  cursor: pointer;
+  border: none;
+
+  &:hover {
+    background-color: $blue; // hover:bg-blue-600
+  }
+}

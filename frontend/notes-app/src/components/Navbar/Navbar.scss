@@ -1,0 +1,15 @@
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+  background-color: transparent;
+  filter: drop-shadow(0rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
+
+  h2 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: white;
+    padding: 0.5rem 0;
+  }
+}
