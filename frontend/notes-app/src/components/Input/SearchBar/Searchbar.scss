@@ -1,0 +1,45 @@
+$primary: #0f0f0f;
+$sec: #181818;
+$tri: #252525;
+$blue: #0174dc;
+$text-gray: #0f0f0f;
+$text-lgt-gray: #737373;
+
+.searchbar {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: $tri;
+}
+
+input {
+  width: 100%;
+  font-size: 1rem;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  //   text-align: center;
+  border: none;
+}
+
+.close {
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: $text-lgt-gray;
+  margin-right: 12px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.search-icon {
+  cursor: pointer;
+  color: $text-lgt-gray;
+
+  &:hover {
+    color: white;
+  }
+}
