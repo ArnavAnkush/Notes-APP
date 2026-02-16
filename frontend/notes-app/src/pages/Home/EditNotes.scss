@@ -1,0 +1,76 @@
+$text-lgt-gray: #737373;
+$primary: #0f0f0f;
+$sec: #181818;
+$tri: #252525;
+$blue: #0174dc;
+
+.edit-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.edit-title {
+  background-color: $tri;
+  padding: 1rem;
+  border-radius: 15px;
+}
+
+.input-label {
+  font-size: 1rem;
+  color: $text-lgt-gray;
+}
+
+.content-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+#content {
+  font-size: 1rem;
+  padding: 1rem;
+  outline: none;
+  background-color: $tri;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+.tags-container {
+  display: flex;
+  flex-direction: column;
+
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.edit-btn {
+  color: white;
+  background-color: $blue;
+  margin-top: 20px;
+  padding: 1rem;
+  border-radius: 15px;
+  width: 100%;
+  &:hover {
+    color: white;
+    text-decoration: underline;
+    scale: 0.97;
+    border-radius: 15px;
+  }
+}
+
+.edit-modal {
+  width: 40%;
+  max-height: 75vh;
+
+  margin: 3.5rem auto;
+  padding: 1.25rem;
+
+  background-color: $primary;
+  border-radius: 10px;
+
+  overflow-y: auto;
+  outline: none;
+}

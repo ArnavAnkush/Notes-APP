@@ -1,11 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
+$tri: #252525;
 $blue: #0174dc;
 
 .card-container {
   margin-left: auto;
   margin-right: auto;
-  // background-color: red;
+  background-color: $tri;
   padding: 2rem;
 }
 
@@ -55,4 +54,9 @@ $blue: #0174dc;
 .add {
   font-size: 2rem;
   color: white;
+}
+
+.edit-modal {
+  width: 40%;
+  // height: 75%;
 }
