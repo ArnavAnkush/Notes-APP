@@ -6,6 +6,12 @@
   background-color: transparent;
   filter: drop-shadow(0rem 0.0625rem 0.0625rem rgba(0, 0, 0, 0.1));
 
+  img {
+    width: 20rem;
+    padding: 1rem 2rem;
+    cursor: pointer;
+  }
+
   h2 {
     font-size: 1.8rem;
     font-weight: 500;

@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "./Navbar.scss";
-import ProfileInfo from "../Cards/ProfileInfo";
+import ProfileInfo from "../Cards/ProfileInfo/ProfileInfo";
 import { useNavigate } from "react-router-dom";
 import SearchBar from "../Input/SearchBar/SearchBar";
+import logo from "../../../public/Untitled.svg";
 
 const Navbar = () => {
   const [searchQuery, setSearchQuery] = useState("");
@@ -18,7 +19,7 @@ const Navbar = () => {
   };
   return (
     <div className="nav-container">
-      <h2>Notes</h2>
+      <img src={logo} alt="" onClick={() => navigate("/dashboard")} />
 
       <SearchBar
         value={searchQuery}

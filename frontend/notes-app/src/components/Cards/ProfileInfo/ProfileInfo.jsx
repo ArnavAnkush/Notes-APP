@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProfileInfo.scss";
-import { getInitials } from "../../utils/helper";
+import { getInitials } from "../../../utils/helper";
 
 const ProfileInfo = ({ onLogout }) => {
   return (
