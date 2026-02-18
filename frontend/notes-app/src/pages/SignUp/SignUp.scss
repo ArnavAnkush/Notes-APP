@@ -49,3 +49,10 @@ $text-gray: #747474;
   letter-spacing: 1px;
   font-weight: 300;
 }
+
+.btn {
+  &:hover {
+    color: white;
+    text-decoration: underline white;
+  }
+}

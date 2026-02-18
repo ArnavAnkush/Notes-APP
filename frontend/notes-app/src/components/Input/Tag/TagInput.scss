@@ -1,0 +1,123 @@
+$primary: #0f0f0f;
+$sec: #181818;
+$tri: #252525;
+$blue: #0174dc;
+
+.tag-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.75rem;
+}
+
+.tags-input {
+  flex: 1;
+  width: 100%;
+  background-color: $tri;
+
+  padding: 0.85rem 1rem;
+  border-radius: 0.75rem;
+
+  border: 1px solid transparent;
+  outline: none;
+
+  font-size: 1rem;
+  color: white;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 1px solid rgba(1, 116, 220, 0.6);
+  }
+
+  &:focus {
+    border: 1px solid $blue;
+    box-shadow: 0 0 0 3px rgba(1, 116, 220, 0.25);
+  }
+}
+
+.md-btn-cont {
+  width: 2.75rem;
+  height: 2.75rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 0.75rem;
+  border: 1px solid rgba(1, 116, 220, 0.7);
+
+  background-color: transparent;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    background-color: $blue;
+    transform: rotate(90deg);
+
+    .md-add {
+      color: white;
+    }
+  }
+
+  &:active {
+    transform: scale(0.95) rotate(90deg);
+  }
+}
+
+.md-add {
+  font-size: 1.8rem;
+  color: $blue;
+  transition: all 0.2s ease;
+}
+
+/* Tags List */
+.tags-list {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+
+  padding: 0.5rem 0;
+  flex-wrap: wrap;
+}
+
+.tag-item {
+  display: flex;
+  align-items: center;
+
+  font-size: 0.95rem;
+  font-weight: 500;
+
+  background-color: $tri;
+  padding: 0.35rem 0.75rem;
+  border-radius: 5px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  transition: all 0.2s ease;
+
+  &:hover {
+    border: 1px solid rgba(1, 116, 220, 0.6);
+  }
+
+  button {
+    margin-left: 0.4rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: transparent;
+    border: none;
+    cursor: pointer;
+
+    color: #cfcfcf;
+    transition: all 0.2s ease;
+
+    &:hover {
+      color: #ff2f2f;
+      transform: scale(1.2);
+    }
+  }
+}

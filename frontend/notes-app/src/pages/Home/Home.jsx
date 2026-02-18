@@ -10,7 +10,7 @@ const Home = () => {
   const [openAddEditModal, setOpenAddEditModal] = useState({
     isShown: false,
     type: "add",
-    date: null,
+    data: null, // ✅ FIXED (was date)
   });
 
   return (
@@ -29,79 +29,13 @@ const Home = () => {
             onDelete={() => {}}
             onPinNote={() => {}}
           />
-
-          <NoteCard
-            title="Meeting on 7th April"
-            date="12th Jun 2026"
-            content="Meeting on 7th April"
-            tags="#meeting"
-            isPinned={true}
-            onEdit={() => {}}
-            onDelete={() => {}}
-            onPinNote={() => {}}
-          />
-
-          <NoteCard
-            title="Meeting on 7th April"
-            date="12th Jun 2026"
-            content="Meeting on 7th April"
-            tags="#meeting"
-            isPinned={true}
-            onEdit={() => {}}
-            onDelete={() => {}}
-            onPinNote={() => {}}
-          />
-
-          <NoteCard
-            title="Meeting on 7th April"
-            date="12th Jun 2026"
-            content="Meeting on 7th April"
-            tags="#meeting"
-            isPinned={true}
-            onEdit={() => {}}
-            onDelete={() => {}}
-            onPinNote={() => {}}
-          />
-
-          <NoteCard
-            title="Meeting on 7th April"
-            date="12th Jun 2026"
-            content="Meeting on 7th April"
-            tags="#meeting"
-            isPinned={true}
-            onEdit={() => {}}
-            onDelete={() => {}}
-            onPinNote={() => {}}
-          />
-
-          <NoteCard
-            title="Meeting on 7th April"
-            date="12th Jun 2026"
-            content="Meeting on 7th April"
-            tags="#meeting"
-            isPinned={true}
-            onEdit={() => {}}
-            onDelete={() => {}}
-            onPinNote={() => {}}
-          />
-
-          <NoteCard
-            title="Meeting on 7th April"
-            date="12th Jun 2026"
-            content="Meeting on 7th April"
-            tags="#meeting"
-            isPinned={true}
-            onEdit={() => {}}
-            onDelete={() => {}}
-            onPinNote={() => {}}
-          />
         </div>
       </div>
 
       <button
         className="add-cont"
         onClick={() => {
-          setOpenAddEditModal({ isShown: true, type: "add", date: null });
+          setOpenAddEditModal({ isShown: true, type: "add", data: null });
         }}
       >
         <MdAdd className="add" />
@@ -110,15 +44,21 @@ const Home = () => {
       <Modal
         isOpen={openAddEditModal.isShown}
         onRequestClose={() => {
-          setOpenAddEditModal({ isShown: false, type: "add", date: null });
+          setOpenAddEditModal({ isShown: false, type: "add", data: null });
         }}
         style={{
           overlay: { backgroundColor: "rgba(0,0,0,0.2)" },
         }}
-        contentLabel=""
+        contentLabel="Edit Note"
         className="edit-modal"
       >
-        <EditNotes />
+        <EditNotes
+          type={openAddEditModal.type}
+          noteData={openAddEditModal.data}
+          onClose={() => {
+            setOpenAddEditModal({ isShown: false, type: "add", data: null });
+          }}
+        />
       </Modal>
     </>
   );
